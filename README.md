@@ -1,3 +1,5 @@
+## Demo
+
 ```java
 public class JniTest {
     public static void main(String[] args) {
@@ -14,19 +16,19 @@ public class JniTest {
 }
 ```
 
-![](https://ws3.sinaimg.cn/large/006tKfTcgy1fivwox8rwlg30o4074myn.gif)
+![Demo](https://ws3.sinaimg.cn/large/006tKfTcgy1fivwox8rwlg30o4074myn.gif)
 
-for Mac
+## for Mac
 ```sh
 gcc -dynamiclib -o ./libJniClear.jnilib JniClear.c -framework JavaVM -I/$JAVA_HOME/include -I/$JAVA_HOME/include/darwin
 ```
 
-for Linux
+## for Linux
 ```sh
 gcc -I$JAVA_HOME/include -I$JAVA_HOME/include/linux -fPIC -shared JniClear.c -o libJniClear.so
 ```
 
-for Windows
+## for Windows
 ```sh
 cl -I"%JAVA_HOME%\include" -I"%JAVA_HOME%\include\win32" -LD JniClear.c -JniClear.dll
 ```
